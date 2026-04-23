@@ -5,7 +5,7 @@ matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 
 def uploaddoc():
-    doc_o = pd.read_csv("../Practica4/iris.csv")
+    doc_o = pd.read_csv("/iris.csv")
     doc_o.drop(columns=["sepal.length", "sepal.width"], inplace=True)
     #doc_o.drop_duplicates(subset=["petal.width", "petal.length", "variety"], inplace=True)
     return doc_o
